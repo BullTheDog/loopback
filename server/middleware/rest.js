@@ -42,8 +42,8 @@ function rest() {
     // added for https://github.com/strongloop/loopback/issues/1134
     if (app.get('legacyExplorer') !== false) {
       deprecate(
-        g.f('Routes "/methods" and "/models" are considered dangerous and should not be used.\n' +
-        'Disable them by setting "legacyExplorer=false" in "server/config.json" or via "app.set()".')
+        g.t('Routes {{"/methods"}} and {{"/models"}} are considered dangerous and should not be used.\n' +
+        'Disable them by setting {{"legacyExplorer=false"}} in {{"server/config.json" }}or via {{"app.set()"}}.')
       );
       if (req.url === '/routes') {
         return res.send(app.handler('rest').adapter.allRoutes());

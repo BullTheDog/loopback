@@ -24,9 +24,9 @@ Color.create({ name: 'green' });
 Color.create({ name: 'blue' });
 
 Color.all(function() {
-  g.log(arguments);
+  console.log(arguments);
 });
 
 app.listen(3000);
 
-g.log('a list of colors is available at http://localhost:3000/colors');
+g.log('a list of colors is available at {{http://localhost:3000/colors}}');

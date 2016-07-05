@@ -41,13 +41,13 @@ var data = { pushSettings: [
 ] };
 
 Application.create(data, function(err, data) {
-  g.log('Created: ', data.toObject());
+  console.log(g.f('Created: %s', data.toObject()));
 });
 
 
-Application.register('rfeng', 'MyApp', { description: g.f('My first mobile application') },
+Application.register('rfeng', 'MyApp', { description: g.t('My first mobile application') },
 function(err, result) {
-  g.log(result.toObject());
+  console.log(result.toObject());
 
   result.resetKeys(function(err, result) {
     g.log(result.toObject());

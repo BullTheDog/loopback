@@ -20,7 +20,7 @@ CartItem.attachTo(remote);
 
 // call the remote method
 CartItem.sum(1, function(err, total) {
-  g.log('result:', err || total);
+  console.log(g.f('result:%s', err || total));
 });
 
 // call a built in remote method

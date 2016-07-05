@@ -5,7 +5,7 @@
 
 var path = require('path');
 var SG = require('strong-globalize');
-SG.SetRootDir(path.join(__dirname));
+SG.SetRootDir(__dirname);
 
 /**
  * loopback ~ public api
